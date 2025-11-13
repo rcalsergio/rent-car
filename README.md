@@ -11,7 +11,7 @@ Nos hemos reunido con el cliente y hemos recogido estos requisitos:
 • Los alquileres van a tener una fecha de inicio y una fecha de fin.
 • Cada oficina tendrá una dirección y un cargo extra en caso de que la entrega no sea en la fecha indicada.
 
-![image](/Users/sergio/Downloads/Captura de pantalla 2025-11-13 a las 19.30.16.png)
+![image](/Users/sergio/Downloads/Captura de pantalla1.png)
 
 Necesitamos un diagrama de casos de uso que cubra las funcionalidades mínimas para que los clientes puedan alquilar.
 
