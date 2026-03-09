@@ -14,8 +14,7 @@ public class ClientController {
     }
 
     public void add(String dni, String name, String surname){
-        Client client = new Client(dni, name, surname);
-        service.add(client);
+        service.add(dni, name, surname);
 
     }
 
@@ -33,8 +32,7 @@ public class ClientController {
     }
 
     public void update(Long id, String dni, String name, String surname){
-        Client client = new Client(id, dni, name, surname);
-        service.update(client);
+        service.update(id, dni, name, surname);
     }
 
 

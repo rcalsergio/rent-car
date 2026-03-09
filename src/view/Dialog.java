@@ -1,6 +1,7 @@
 package view;
 
 import controller.ClientController;
+import model.Client;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ public class Dialog {
     private Scanner scanner;
     public Dialog() {
         clientController = new ClientController();
+        addInitialClients();
     }
 
 
@@ -109,6 +111,15 @@ public class Dialog {
                 System.err.println(e.getMessage());
             }
         } while (true);
+    }
+
+    public void addInitialClients(){
+        clientController.add("87896685P", "Sergio", "Rodríguez");
+        clientController.add("99687554K", "Aurelio", "Fernández");
+        clientController.add("12345678A", "María", "González");
+        clientController.add("56789012B", "Lucía", "López");
+        clientController.add("34567890C", "Carlos", "Martínez");
+        clientController.add("78901234D", "Ana", "Sánchez");
     }
 
 }

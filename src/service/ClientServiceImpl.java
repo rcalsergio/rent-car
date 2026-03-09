@@ -13,7 +13,8 @@ public class ClientServiceImpl implements IClientService{
         repository = ClientRepository.getClientRepository();
     }
 
-    public void add(Client client) {
+    public void add(String dni, String name, String surname) {
+        Client client = new Client(dni, name, surname);
         repository.add(client);
     }
 
@@ -31,7 +32,8 @@ public class ClientServiceImpl implements IClientService{
     }
 
 
-    public void update(Client client) {
+    public void update(Long id, String dni, String name, String surname) {
+        Client client = new Client(id, dni, name, surname);
         repository.update(client);
     }
 
