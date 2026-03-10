@@ -31,6 +31,10 @@ public class ClientServiceImpl implements IClientService{
         return repository.findByDni(dni);
     }
 
+    public Client findById(Long id) {
+        return repository.findById(id);
+    }
+
 
     public void update(Long id, String dni, String name, String surname) {
         Client client = new Client(id, dni, name, surname);
